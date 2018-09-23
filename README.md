@@ -20,5 +20,14 @@ from within the same directory as DarkSpiritz.
 
 You will see a start-up screen. This screen will display things like commands and configuration settings. You can set configuration settings inside the config.xml file itself or through commands in the DarkSpiritz shell.
 
+# Features:
+
+These are features that DarkSpiritz Team prides themself on based on this program:
+
+- Real Time Updating of Configuration
+- Never a need to restart the program even when adding plugins or editing them.
+- Easy to use UX
+- Multi-functionality
+
 # Default Plugins:
 
