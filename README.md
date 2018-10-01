@@ -9,7 +9,7 @@ If you need any help feel free to contact us at sectel.team@protonmail.com.
 # Getting Started
 To install DarkSpiritz clone the github repo and run:
 ```
-python setup.py install
+sudo python installer.py
 ```
 
 This will download all necessary modules for DarkSpiritz. Once you run this you will be able to run:
