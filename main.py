@@ -195,7 +195,8 @@ def main():
             header.main_header()
             main()
         elif terminal[0:9] =='exit':
-            exit()
+            print "Exiting"
+            sys.exit()
         elif terminal[0:45] == 'reload':
 			os.system('python main.py')
         elif terminal[0:46] == 'credits':

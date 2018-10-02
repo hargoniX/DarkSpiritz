@@ -32,7 +32,7 @@ class colors:
     GW = '\033[4m'
     HH = '\033[1m'
 
-intname = "DARK"
+intname = "\033[4m" + "dark"
 det = sys.argv[0]
 den = det.split('.')[-2]
 fin = den.split('/')[1]
