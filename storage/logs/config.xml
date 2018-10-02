@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
  <config name="ds">
-  <target>auxiliumdev.com</target>
+  <target>localhost</target>
   <listener_address>127.0.0.1</listener_address>
   <interface>wlp0s20u10</interface>
   <listener_port>7889</listener_port>

@@ -31,7 +31,7 @@ def Command_exe(msg,cmd):
 	stdout.write("\r " + msg +" STATUS:%s" % i)
 
 text("Starting Datasploit Installation..")
-print Command_exe("["+time.strftime('%H:%M:%S')+"] Making Directory                                 ",'sudo mkdir /storage/datasploit')
 print Command_exe("["+time.strftime('%H:%M:%S')+"] Downloading Datasploit                           ",'git clone https://github.com/DataSploit/datasploit.git ./storage/datasploit')
-print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Datasploit (This may take a while..)  ",'pip install --upgrade --force-reinstall -r ./storage/datasploit/requirements.txt')
+print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Datasploit (This may take a while..)  ",'pip install -r ./storage/datasploit/requirements.txt --user')
+print Command_exe("["+time.strftime('%H:%M:%S')+"] Fixing Configuration Files  ",'mv ./storage/config_sample.py ./storage/datasploit/config.py')
 success("Installation Successful!")

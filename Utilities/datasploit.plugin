@@ -1,0 +1,15 @@
+Description = 'Datasploit Tool'
+
+from plugin_support import *
+import os
+
+
+check = os.path.exists('./storage/datasploit')
+if check == True:
+    target = ask.target
+    text("Running Datasploit on Target: " + target)
+    warning("You may have to run pip install -r requirements.txt from within the /storage/datasploit directory after install outside of the DS Framework!")
+    query = 'python ./storage/datasploit/datasploit.py ' + target
+    os.system(query)
+else:
+    fail("You need to run the datasploit installation plugin first! Command: use Utilities/datasploitinstall")
