@@ -8,6 +8,10 @@ If you need any help feel free to contact us at sectel.team@protonmail.com.
 
 # Getting Started
 
+Clone the repository with git:
+```
+git clone https://github.com/DarkSpiritz/DarkSpiritz.git```
+
 *DarkSpiritz wiki available [here](https://github.com/DarkSpiritz/DarkSpiritz/wiki)*
  
 To install DarkSpiritz clone the github repo and run:
