@@ -25,6 +25,7 @@ from os.path import join
 from subprocess import check_output
 from lxml import etree
 from core import retarget
+from core import contrib
 
 def Command_exe(msg,cmd):
     	i = "\033[1mSTATUS"+colors[0]+":[Processing]"
@@ -200,7 +201,7 @@ def main():
         elif terminal[0:45] == 'reload':
 			os.system('python main.py')
         elif terminal[0:46] == 'credits':
-			credits.credits()
+			contrib.credits()
 			main()
 	elif terminal[0:1] =='!':
 	    os.system(terminal[1:])
