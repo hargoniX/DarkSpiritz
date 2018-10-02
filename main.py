@@ -42,7 +42,7 @@ os.system('clear')
 print Command_exe("["+time.strftime('%H:%M:%S')+"] Checking for Version Update                    ",'git pull')
 version_open = open("storage/version","r")
 version = version_open.read()
-intname = "DARK"
+intname = "dark"
 lan_ip = os.popen("hostname -i | awk {' print $1 '}").read()
 
 def complete(text, state):
@@ -115,10 +115,8 @@ except KeyboardInterrupt:
     print "   [" + colors[1] + "info" + colors[0] + "] Failed to connect to a network"
 
 # Start Screen
-time.sleep(0.1)
 print "   [" + colors[4] + "info" + colors[0] + "] Initializing Global State."
-time.sleep(0.6)
-print "   [" + colors[4] + "info" + colors[0] + "] Detected Version => %s" % (version)
+print "   [" + colors[4] + "info" + colors[0] + "] Detected Version => %s" % (str(version))
 print "   [" + colors[4] + "info" + colors[0] + "] Number of Payloads Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Payloads/*'))) + colors[0] + "]"
 print "   [" + colors[4] + "info" + colors[0] + "] Number of Exploits Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Exploits/*'))) + colors[0] + "]"
 print "   [" + colors[4] + "info" + colors[0] + "] Number of Utilities Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Utilities/*'))) + colors[0] + "]\n"
@@ -130,7 +128,7 @@ PLUGIN_EXEC = "/usr/bin/python2 "
 
 def main():
     try:
-	line_1 = "[\033[31m" + intname + "\033[0m]\033[0m: "
+	line_1 = "\033[4m" + intname + "\033[0m > "
 	terminal = raw_input(line_1)
         if terminal[0:3] =='use':
             if terminal[4:] == terminal[4:]:
