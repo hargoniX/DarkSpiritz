@@ -1,0 +1,12 @@
+Description = 'DNS fake Server Spoof.'
+
+from plugin_support import *
+import subprocess
+
+try:
+	text("Starting DNS Fake server [DNSchef]")
+	text("if you want to stop DNS Server (PRESS [Ctrol + C])\n")
+	subprocess.call("sudo fuser -kuv 53/udp >/dev/null 2>&1 ", shell=True)
+	subprocess.call("python lib/dnschef/dnschef.py --fakeip "+ ask.dnsspoof + " --fakedomains " + ask.target + " --interface " + ask.listener_address + " -q", shell=True)
+except KeyboardInterrupt:
+	exit()

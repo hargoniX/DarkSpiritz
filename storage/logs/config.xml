@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+ <config name="ds">
+  <target>localhost</target>
+  <listener_address>127.0.0.1</listener_address>
+  <interface>wlp0s20u10</interface>
+  <listener_port>8080</listener_port>
+  <mac_address>00:11:22:33:44:55</mac_address>
+  <urlpath>/connect</urlpath>
+  <dnsspoof>www.test.com</dnsspoof></config>
+</configuration>
