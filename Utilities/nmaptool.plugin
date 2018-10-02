@@ -1,0 +1,12 @@
+Description = 'Nmap Port Scanner Tool'
+
+from plugin_support import *
+import os, sys
+
+text("Loading Target..")
+success("Target: " + ask.target)
+target = ask.target
+args = text(raw_input("What Arguments Would You Like To Include? (ex. -sV): "))
+text("Running NMap Port Scan..")
+os.system("nmap " + str(args) + " " + str(target))
+success("Nmap Scan Complete!")

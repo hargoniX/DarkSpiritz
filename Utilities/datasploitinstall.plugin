@@ -1,0 +1,37 @@
+Description = 'Run to install Datasploit for DSF'
+from plugin_support import *
+import os, sys, subprocess, time
+from sys import stdout
+
+colors=['\033[0m',   # 0}  WHITE
+		'\033[31m',  # 1}  RED
+		'\033[32m',  # 2}  YELLOW
+		'\033[33m',  # 3}  PURPLE
+		'\033[34m',  # 4}  CYAN
+		'\033[35m',  # 5}  MAGENT
+		'\033[36m',  # 6}  CURL ____
+		'\033[1m',   # 7}  WHITE LOW
+		'\033[4m',   # 8}  WHITE HIGH
+		'\033[0m',   # 9}  WHITE (FUCK)
+		'\033[40m',  # 10} BACKGROUND GREY
+		'\033[41m',  # 11} BACKGROUND RED
+		'\033[42m',  # 12} BACKGROUND GREEN
+		'\033[43m',  # 13} BACKGROUND YELLOW
+		'\033[32m']   # 14}  GREEN
+
+def Command_exe(msg,cmd):
+    	i = "\033[1mSTATUS"+colors[0]+":[Processing]"
+	stdout.write(" " + msg + " %s" % i)
+	stdout.flush()
+	if subprocess.call(cmd+' >/dev/null 2>&1', shell=True)==0:
+		i = "[\033[1m"+colors[14]+"OK"+colors[0]+"]"
+	else:
+		i = "["+colors[1]+"\033[1mERROR"+colors[0]+"]["+colors[0]+"\033[1mWARNING"+colors[0]+"]"
+
+	stdout.write("\r " + msg +" STATUS:%s" % i)
+
+text("Starting Datasploit Installation..")
+print Command_exe("["+time.strftime('%H:%M:%S')+"] Making Directory                                 ",'sudo mkdir /storage/datasploit')
+print Command_exe("["+time.strftime('%H:%M:%S')+"] Downloading Datasploit                           ",'git clone https://github.com/DataSploit/datasploit.git ./storage/datasploit')
+print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing Datasploit (This may take a while..)  ",'pip install --upgrade --force-reinstall -r ./storage/datasploit/requirements.txt')
+success("Installation Successful!")

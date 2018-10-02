@@ -1,0 +1,6 @@
+Description = 'aircrack-ng'
+from plugin_support import *
+import os
+
+args = text(raw_input("Enter aircrack-ng arguments and options (type help for help menu): "))
+os.system("aircrack-ng " + str(args))
