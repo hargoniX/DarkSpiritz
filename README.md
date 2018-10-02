@@ -7,6 +7,9 @@ Created by the SecTel Team it was a project of one of the owners to update and c
 If you need any help feel free to contact us at sectel.team@protonmail.com.
 
 # Getting Started
+
+*DarkSpiritz wiki available [here](https://github.com/DarkSpiritz/DarkSpiritz/wiki)
+ 
 To install DarkSpiritz clone the github repo and run:
 ```
 sudo python installer.py
