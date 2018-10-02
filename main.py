@@ -117,9 +117,9 @@ except KeyboardInterrupt:
 # Start Screen
 print "   [" + colors[4] + "info" + colors[0] + "] Initializing Global State."
 print "   [" + colors[4] + "info" + colors[0] + "] Detected Version => %s" % (str(version))
-print "   [" + colors[4] + "info" + colors[0] + "] Number of Payloads Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Payloads/*'))) + colors[0] + "]"
-print "   [" + colors[4] + "info" + colors[0] + "] Number of Exploits Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Exploits/*'))) + colors[0] + "]"
-print "   [" + colors[4] + "info" + colors[0] + "] Number of Utilities Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Utilities/*'))) + colors[0] + "]\n"
+print "   [" + colors[4] + "info" + colors[0] + "] Number of Payloads Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Payloads/*')) - 1) + colors[0] + "]"
+print "   [" + colors[4] + "info" + colors[0] + "] Number of Exploits Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Exploits/*')) -1) + colors[0] + "]"
+print "   [" + colors[4] + "info" + colors[0] + "] Number of Utilities Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Utilities/*')) -1) + colors[0] + "]\n"
 time.sleep(0.1)
 mac_address = os.popen("ip addr | grep 'state UP' -A1 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'").read()
 gateway_ip = check_output("/sbin/ip route | awk '/default/' | awk {' print $3 '} | sed -n 1p", shell=True)
