@@ -38,7 +38,7 @@ def Command_exe(msg,cmd):
 	stdout.write("\r " + msg +" STATUS:%s" % i)
 
 os.system('clear')
-print Command_exe("["+time.strftime('%H:%M:%S')+"] Checking for Version Update                    ",'git clone https://github.com/DarkSpiritz/DarkSpiritz.git')
+print Command_exe("["+time.strftime('%H:%M:%S')+"] Checking for Version Update                    ",'git pull')
 print "Updated"
 os.system('clear')
 version_open = open("storage/version","r")
