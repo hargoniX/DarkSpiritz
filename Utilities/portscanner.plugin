@@ -1,4 +1,4 @@
-DESCRIPTION = "Find open ports of an IP Address"
+Description = 'Find open ports of an IP Address'
 from plugin_support import *
 import socket, subprocess, sys
 from datetime import datetime

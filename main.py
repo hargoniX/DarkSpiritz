@@ -214,17 +214,20 @@ Plugin Category
  Name
  ----"""
     for d in glob.iglob('*'):
-		if "LICENSE" not in d:
-			if "README.md" not in d:
-				if "lib" not in d:
-					if "installer.py" not in d:
-						if "main.py" not in d:
-							if "banners" not in d:
-								if "core" not in d:
-									if "Resources" not in d:
-										if "storage" not in d:
-											if "modules" not in d:
-												print """ %s""" % (d)
+		if "CONTRIBUTING.md" not in d:
+			if ".travis.yml" not in d:
+				if "requirements.txt" not in d:
+					if "LICENSE" not in d:
+						if "README.md" not in d:
+							if "lib" not in d:
+								if "installer.py" not in d:
+									if "main.py" not in d:
+										if "banners" not in d:
+											if "core" not in d:
+												if "Resources" not in d:
+													if "storage" not in d:
+														if "modules" not in d:
+															print """ %s""" % (d)
     print ""
 
 if __name__=='__main__':

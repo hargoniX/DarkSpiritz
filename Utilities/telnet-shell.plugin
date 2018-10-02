@@ -1,4 +1,4 @@
-DESCRIPTION = "Open a telnet shell"
+Description = 'Open a telnet shell'
 
 from plugin_support import *
 import os, sys

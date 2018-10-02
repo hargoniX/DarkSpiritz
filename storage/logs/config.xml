@@ -10,6 +10,6 @@
   <dnsspoof>www.test.com</dnsspoof>
   <RHOST>123.45.67.890</RHOST>
   <RPORT>1000</RPORT>
-  <LPORT>1000</LPORT>
+  <LPORT>2020</LPORT>
   <LHOST>localhost</LHOST></config>
 </configuration>
