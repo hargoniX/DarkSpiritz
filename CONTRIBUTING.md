@@ -22,4 +22,4 @@ Anybody can contribute! If you are new, experienced, or anything in between feel
 
 If you would like to submit any changes or things you've added to DarkSpiritz please submit a PR with a clear description of changes and locations of files added along with descriptions for each use of a file. If we find something fishy or something that doesn't belong we will deny the PR and tell you why. Keep all PR's appropriate and professional.
 
-Thank you for taking the time to read this and if you do help thank you so much! Join our discord server [here]()
+Thank you for taking the time to read this and if you do help thank you so much! Join our discord server [here](https://discord.gg/nQMC662)
