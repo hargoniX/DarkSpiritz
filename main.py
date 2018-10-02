@@ -40,6 +40,7 @@ def Command_exe(msg,cmd):
 
 os.system('clear')
 print Command_exe("["+time.strftime('%H:%M:%S')+"] Checking for Version Update                    ",'git pull')
+print ""
 version_open = open("storage/version","r")
 version = version_open.read()
 intname = "dark"
