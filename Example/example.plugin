@@ -1,0 +1,10 @@
+Description = "Example plugin.. shows target IP"
+
+from plugin_support import *
+
+ip = ask.target
+text(ip + "This was printed with text()")
+print ip + "This was printer"
+success("Success")
+fail("Fail")
+warning("Warning")
