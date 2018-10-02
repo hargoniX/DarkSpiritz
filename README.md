@@ -8,7 +8,7 @@ If you need any help feel free to contact us at sectel.team@protonmail.com.
 
 # Getting Started
 
-*DarkSpiritz wiki available [here](https://github.com/DarkSpiritz/DarkSpiritz/wiki)
+*DarkSpiritz wiki available [here](https://github.com/DarkSpiritz/DarkSpiritz/wiki)*
  
 To install DarkSpiritz clone the github repo and run:
 ```
