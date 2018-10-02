@@ -113,11 +113,14 @@ try:
 except KeyboardInterrupt:
     print "   [" + colors[1] + "info" + colors[0] + "] Failed to connect to a network"
 
-#Start screen
+# Start Screen
 time.sleep(0.1)
 print "   [" + colors[4] + "info" + colors[0] + "] Initializing Global State."
 time.sleep(0.6)
 print "   [" + colors[4] + "info" + colors[0] + "] Detected Version => %s" % (version)
+print "   [" + colors[4] + "info" + colors[0] + "] Number of Payloads Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Payloads/*'))) + colors[0] + "]"
+print "   [" + colors[4] + "info" + colors[0] + "] Number of Exploits Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Exploits/*'))) + colors[0] + "]"
+print "   [" + colors[4] + "info" + colors[0] + "] Number of Utilities Loaded => [" + colors[14] + "%s" % (len(glob.glob('./Utilities/*'))) + colors[0] + "]\n"
 time.sleep(0.1)
 mac_address = os.popen("ip addr | grep 'state UP' -A1 | tail -n1 | awk '{print $2}' | cut -f1  -d'/'").read()
 gateway_ip = check_output("/sbin/ip route | awk '/default/' | awk {' print $3 '} | sed -n 1p", shell=True)
