@@ -1,0 +1,6 @@
+terminaltables==3.1.0
+lxml==4.2.5
+requests==2.19.1
+urllib3==1.23
+logging==0.4.9.6
+scapy==2.3.1

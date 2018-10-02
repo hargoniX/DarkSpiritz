@@ -1,1 +1,6 @@
 language: python
+install: true
+deploy:
+  skip_cleanup: true
+before install:
+- sudo python installer.py
