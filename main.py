@@ -126,7 +126,7 @@ PLUGIN_EXEC = "/usr/bin/python2 "
 
 def main():
     try:
-	line_1 = " [\033[31m" + intname + "\033[0m]\033[0m: "
+	line_1 = "[\033[31m" + intname + "\033[0m]\033[0m: "
 	terminal = raw_input(line_1)
         if terminal[0:3] =='use':
             if terminal[4:] == terminal[4:]:
