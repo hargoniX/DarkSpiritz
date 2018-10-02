@@ -109,6 +109,7 @@ try:
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing wine and winetricks.                    ",'pacman -S wine winetricks')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing android-tools-adb.                      ",'pacman -S android-tools-adb')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing android-tools-adb.                      ",'pacman -S android-tools-fastboot')
+        print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing telnet.                                 ",'pacman -S telnet')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing logging.                                ",'python -m pip install logging')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing impacket.                               ",'python -m pip install impacket')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing pysmb.                                  ",'python -m pip install pysmb')
@@ -123,6 +124,7 @@ try:
             os.system('python main.py')
     elif options == "2":
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Getting wine architecture.                                         ",'dpkg --add-architecture i386')
+        print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing telnet.                                                 ",'apt-get -y install telnet')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing wine and winetricks.                                    ",'apt-get -y install wine32 winetricks')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing android-tools-adb and android-tools-fastboot.           ",'apt-get -y install android-tools-adb android-tools-fastboot')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing logging.                                                ",'python -m pip install logging')
@@ -140,6 +142,7 @@ try:
     elif options == "3":
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing wine and winetricks.                                    ",'dnf install wine32 winetricks')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing android-tools-adb and android-tools-fastboot.           ",'dnf install android-tools-adb android-tools-fastboot')
+        print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing telnet.                                                 ",'dnf install telnet')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing logging.                                                ",'python -m pip install logging')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing impacket.                                               ",'python -m pip install impacket')
         print Command_exe("["+time.strftime('%H:%M:%S')+"] Installing pysmb.                                                  ",'python -m pip install pysmb')

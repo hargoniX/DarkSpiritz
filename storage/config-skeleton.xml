@@ -7,6 +7,9 @@
       <listener_port>8080</listener_port>
       <mac_address>00:11:22:33:44:55</mac_address>
       <urlpath>/connect</urlpath>
-	  <dnsspoof>www.test.com</dnsspoof>
-    </config>
+	    <dnsspoof>www.test.com</dnsspoof>
+      <RHOST>123.45.67.890</RHOST>
+      <RPORT>1000</RPORT>
+      <LPORT>1000</LPORT>
+      <LHOST>localhost</LHOST></config>
 </configuration>
