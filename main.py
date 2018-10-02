@@ -39,8 +39,6 @@ def Command_exe(msg,cmd):
 
 os.system('clear')
 print Command_exe("["+time.strftime('%H:%M:%S')+"] Checking for Version Update                    ",'git pull')
-print "Updated"
-os.system('clear')
 version_open = open("storage/version","r")
 version = version_open.read()
 intname = "DARK"
@@ -196,6 +194,8 @@ def main():
             main()
         elif terminal[0:9] =='exit':
             exit()
+        elif terminal[0:45] == 'reload':
+			os.system('python main.py')
 	elif terminal[0:1] =='!':
 	    os.system(terminal[1:])
             main()

@@ -19,4 +19,5 @@ def help():
     print "  use             Use a plugin. Usage: use <plugin_name>"
     print "  pyexec          Execute python interpreter code"
     print "  retarget        Change config values"
+    print "  reload          Reload configuration and framework"
     print ""

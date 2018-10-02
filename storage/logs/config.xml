@@ -2,8 +2,13 @@
 <configuration>
  <config name="ds">
   <target>auxiliumdev.com</target>
-  <listener_address>127.0.0.1</listener_address>
-  <interface>wlp0s20u10</interface>
+ <></>
+ <></>
+ <nmo></nmo>
+ <>ad</>
+ <d>as</d>
+ <d>as</d>
+ <asd>as</asd></interface>
   <listener_port>7889</listener_port>
   <mac_address>00:11:22:33:44:55</mac_address>
   <urlpath>/connect</urlpath>
