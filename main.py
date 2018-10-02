@@ -199,6 +199,9 @@ def main():
             exit()
         elif terminal[0:45] == 'reload':
 			os.system('python main.py')
+        elif terminal[0:46] == 'credits':
+			credits.credits()
+			main()
 	elif terminal[0:1] =='!':
 	    os.system(terminal[1:])
             main()

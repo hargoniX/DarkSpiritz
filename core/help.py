@@ -20,4 +20,5 @@ def help():
     print "  pyexec          Execute python interpreter code"
     print "  retarget        Change config values"
     print "  reload          Reload configuration and framework"
+    print "  credits         Show Contributor's and Their Links"
     print ""
