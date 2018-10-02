@@ -1,5 +1,5 @@
 language: python
-install: true
+install: false
 deploy:
   skip_cleanup: true
 before install:
