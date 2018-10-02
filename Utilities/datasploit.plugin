@@ -12,4 +12,4 @@ if check == True:
     query = 'python ./storage/datasploit/datasploit.py ' + target
     os.system(query)
 else:
-    fail("You need to run the datasploit installation plugin first! Command: use Utilities/datasploitinstall")
+    fail("You need to run the datasploit installation plugin first! Command: use Utilities/datasploitinst")
